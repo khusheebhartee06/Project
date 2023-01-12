@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar {
+           background-color: aqua;
+           border: 2px solid rgb(213, 29, 29);
+           border-radius: 60px;
+           transition: all 2s 2s;
+
+       }
+
+       .navbar ul {
+           overflow: auto;
+       }
+
+       .navbar li {
+           float: left;
+           list-style: none;
+           margin: 15px 50px;
+
+       }
+
+       .navbar ul li a {
+           font-size: 20px;
+           color: rgb(12, 12, 12);
+           text-decoration: none;
+           transition-property: background-color, font-size, color;
+           transition-duration: 2s;
+           transition-delay: 2s;
+           transition-timing-function: ease-in;
+
+
+       }
+
+       .navbar ul li a:hover {
+           background-color: rgb(222, 7, 7);
+           font-size: 25px;
+           color: rgb(207, 220, 19);
+       }
+
+       .navbar:hover {
+           background-color: rgb(7, 242, 3);
+           border-color: red;
+       }
+
+       .searchbar {
+           margin: 20px 70px;
+
+       }
+
+       .searchbar input {
+           margin-left: 70px;
+           padding: 10px 10px;
+           color: gray;
+           border: 2px solid black;
+           border-radius: 30px;
+       }
+      
+
+.container2{
+    background-color: rgb(146, 252, 100);
+    border: 2px solid red;
+    border-radius:60px;
+    width: 225px;
+    height: 400px;
+    margin: 5px;
+    padding: 5px;
+    transition: all 2s 2s;
+}
+.container2:hover{
+    background-color: rgb(228, 103, 174);
+   color: rgb(2, 47, 17);
+    font-size: 18px;
+    border-color: black;
+    
+}
+      </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li> <a href="home.html">HOME</a></li>
+                <li> <a href="sign.html">SIGN UP</a></li>
+                <li> <a href="about.html">ABOUT US</a></li>
+                <li> <a href="contact.html">CONTACT US</a></li>
+                <li> <a href="prodcuct.html">PRODUCTS</a></li>
+                <div class="searchbar">
+                    <input type="search" name="search" placeholder="Search here">
+                </div>
+            </ul>
+         </nav>
+    </header>
+
+        
+    <center>
+    <div class="container2">
+        <form>
+         
+            
+                <h2>Login Form</h2>
+                <table>
+                <tr>
+                    <td>
+                        <input type="text"name="fname"placeholder="Enter your First name"required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text"name="lname"placeholder="Enter your Last name"required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text"name="uname"placeholder="Enter your User name"required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="email"name="email"placeholder="Enter your Email ID"required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="password"name="pass"placeholder="Enter your Password"required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text"name="mnumber"placeholder="Enter your Mobile Number"required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Date of Birth:<input type="date"name="dob"required>
+                    </td>
+                </tr>
+               
+    
+               <tr>
+                <td>
+                    Select City:<Select name="city">
+                        <option>Pune</option>
+                        <option>Mumbai</option>
+                        <option>Kolkata</option>
+                        <option>Bangluru</option>
+                    </Select>
+                </td>
+               </tr>
+               <tr>
+                <td>
+                    Gender:<input type="radio"name="gen"value="male">Male
+                    <input type="radio"name="gen"value="female">Female
+                </td>
+            </tr>
+                <tr>
+                    <td>
+                        <input type="submit"value="Click">
+                        <input type="reset"value="Cancle">
+                    </td>
+                </tr>
+            </table>
+          
+    </form>
+    </div>
+</center>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar {
+           background-color: aqua;
+           border: 2px solid rgb(213, 29, 29);
+           border-radius: 60px;
+           transition: all 2s 2s;
+
+       }
+
+       .navbar ul {
+           overflow: auto;
+       }
+
+       .navbar li {
+           float: left;
+           list-style: none;
+           margin: 15px 50px;
+
+       }
+
+       .navbar ul li a {
+           font-size: 20px;
+           color: rgb(12, 12, 12);
+           text-decoration: none;
+           transition-property: background-color, font-size, color;
+           transition-duration: 2s;
+           transition-delay: 2s;
+           transition-timing-function: ease-in;
+
+
+       }
+
+       .navbar ul li a:hover {
+           background-color: rgb(222, 7, 7);
+           font-size: 25px;
+           color: rgb(207, 220, 19);
+       }
+
+       .navbar:hover {
+           background-color: rgb(7, 242, 3);
+           border-color: red;
+       }
+
+       .searchbar {
+           margin: 20px 70px;
+
+       }
+
+       .searchbar input {
+           margin-left: 70px;
+           padding: 10px 10px;
+           color: gray;
+           border: 2px solid black;
+           border-radius: 30px;
+       }
+       .container1{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+
+       }
+         
+
+.item{
+    transition: all 2s 1s;
+} 
+      .item:hover{
+    
+        background-color: rgb(246, 246, 75);
+       border: 1px solid red;
+      border-radius: 10px;
+      }
+      .item a{
+        color: rgb(47, 4, 116);
+        text-decoration: none;
+        transition: all 2s;
+      }
+      .item a:hover{
+        color:rgb(236, 16, 16);
+      }
+      .container2{
+        background-color: pink;
+        border: 3px solid green;
+        border-radius: 40px;
+        font-size: 20px;
+        padding: 10px;
+        margin: 20px;
+        width: 350px;
+        height: 300px;
+        transition: all 2s ;
+      }
+      .container2 input{
+        border: 1px solid black;
+        border-radius: 30px;
+        font-size: 25px;
+        
+      }
+      .container2:hover{
+        background-color: gray;
+        border: 2px solid red;
+        border-radius: 50px;
+      }
+
+
+       </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li> <a href="home.html">HOME</a></li>
+                <li> <a href="sign.html">SIGN UP</a></li>
+                <li> <a href="about.html">ABOUT US</a></li>
+                <li> <a href="contact.html">CONTACT US</a></li>
+                <li> <a href="prodcuct.html">PRODUCTS</a></li>
+                <div class="searchbar">
+                    <input type="search" name="search" placeholder="Search here">
+                </div>
+            </ul>
+         </nav>
+    </header>
+    <div class="container1">
+        <div class="item">
+            <a href="tel:+911234567890">
+               Call us <img src="call us.png"width="50"height="50">
+             </a> 
+        </div>
+        <div class="item">
+            <a href="//api.whatsapp.com/send?phone=911234567890">
+             
+                WhatsApp<img src="WhatsApp.svg"width="50"height="50">
+            
+            </a>
+        </div>
+        <div class="item">
+            <a href="mailto:bharti32@gmail.com">
+                Email<img src="email.png"width="50"height="50px">
+
+            </a>
+        </div>
+        </div>
+        <center>
+        <div class="container2">
+           
+                <form>
+                    <table>
+                        <h2>Login Form</h2>
+                        <tr>
+                           <td>
+                               <input type="text"name="uname"placeholder="Enter User Name">   
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="password"name="pass"placeholder="Enter your password">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="submit"value="Click">
+                                <input type="reset"value="Cancle">
+
+
+                            </td>
+                        </tr>
+    
+                    </table>
+                </form>
+
+
+        </div>
+    </center>
+</body>
+</html>
